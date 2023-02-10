@@ -1,0 +1,18 @@
+<h2>Simple Form</h2>
+
+<form [formGroup]="form" (ngSubmit)="processForm()">
+    <table>
+        <tr>
+            <td>Name:</td>
+            <td>
+                <input type="text" size="30" placeholder="Name" formControlName="name">
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <button type="submit">Add</button>
+            </td>
+        </tr>
+    </table>
+</form>
